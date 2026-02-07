@@ -6,9 +6,20 @@ on:
   pull_request:
     branches: [ main ]
 
+# 设置必要的权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    # 设置环境变量
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
     - name: Checkout repository

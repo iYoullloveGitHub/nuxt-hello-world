@@ -5,12 +5,14 @@
     <p>页面路径: {{ $route.path }}</p>
     
     <div>
-      <h2>Nuxt SSR 特性演示</h2>
+      <h2>Nuxt CSR 特性演示 (GitHub Pages)</h2>
       <ul>
-        <li>✅ 服务器端渲染 (SSR)</li>
+        <li>✅ 客户端渲染 (CSR)</li>
         <li>✅ 自动路由</li>
         <li>✅ Vue 3 Composition API</li>
         <li>✅ TypeScript 支持</li>
+        <li>✅ GitHub Pages 部署</li>
+        <li>✅ 完全免费托管</li>
       </ul>
     </div>
 
